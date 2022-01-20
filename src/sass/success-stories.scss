@@ -1,0 +1,119 @@
+#success-stories{
+    background-color: $prim;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    align-items: center;
+    div{
+        margin: 0 20%;
+        color: white;
+        padding: 20px 0;
+        h3{
+            color: white;
+        }
+        a{
+            color: white;
+        }
+    }
+    img{
+        width: 100%;
+        height: 100%;
+    }
+}
+
+@media screen and (max-width: $mobile){
+    #success-stories{
+        grid-template-columns: 1fr;
+        div{
+            margin: 0 5%;
+        }
+    }
+}
+
+#storiesBanner{
+    @media screen and (max-width: $mobile){
+        flex-direction: column;
+    }
+    @media screen and (min-width: $mobile){
+        flex-direction: row;
+    }
+    display: flex;
+    justify-content: space-around;
+    // align-items: center;
+    text-align: center;
+    background-color: $prim;
+    padding: 50px;
+    
+    p{
+        color: white;
+    }
+    a{
+        color: white;
+    }
+    
+    .banner-item{
+        @media screen and (min-width: $mobile){
+            width: 30%;
+            height: fit-content;
+        }
+        @media screen and (max-width: $mobile){
+            display: flex;
+        }
+        padding:30px;
+        
+        p{
+            padding: 0 15%;  
+        }
+        img{
+            margin: 10px;
+            height:50%;
+            object-fit: cover; 
+        }
+    }
+}
+#storyField{
+    padding:0 7%;
+
+    .storyPicRight{
+        @media screen and (max-width: $mobile){
+            flex-direction: column;
+        }
+        @media screen and (min-width: $mobile){
+            flex-direction: row;
+        }
+        display:flex;
+        align-items: center;
+        padding: 3rem 0;
+    }
+
+    .storyPicLeft{
+        @media screen and (max-width: $mobile){
+            flex-direction: column;
+        }
+        @media screen and (min-width: $mobile){
+            flex-direction: row-reverse;
+        }
+        display: flex;
+        align-items: center;
+        padding: 3rem 0;   
+    }
+    .textStory{
+        width: 60%;
+        padding: 0 2rem;
+        h2{
+            text-align: left;
+        }
+    }
+
+    .storyPic{
+        width:40%;
+        text-align: center;
+        img{
+            width:80%;
+            object-fit: cover; 
+            
+        }
+        
+    }
+}
+
+

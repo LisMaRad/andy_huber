@@ -1,0 +1,345 @@
+@font-face {
+  font-family: 'Covered By Your Grace', cursive;
+  src: url("fonts/CoveredByYourGrace-Regular.ttf");
+}
+
+@font-face {
+  font-family: 'Cera Basic';
+  src: url("fonts/cera-basic.otf");
+}
+
+body {
+  font-family: "Cera Basic";
+  margin: 0;
+}
+
+h1 {
+  color: #3e7db3;
+  font-family: "Covered By Your Grace", cursive;
+}
+
+h3 {
+  color: #707070;
+}
+
+h2 {
+  font-size: 35px;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header ul {
+  text-align: right;
+}
+
+header ul li {
+  list-style: none;
+  display: inline;
+  padding: 0 10px;
+}
+
+header ul li.current_page_item a {
+  border-bottom: 2px solid #3e7db3;
+}
+
+header .burger-menu {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  header .hero {
+    width: 100%;
+    height: 25vh;
+  }
+  header .screen-menu {
+    display: none;
+  }
+  header .burger-menu {
+    display: block;
+  }
+  header .burger-menu img {
+    position: absolute;
+    width: 8%;
+    top: 0;
+    right: 0;
+  }
+  header .burger-menu img:hover {
+    cursor: pointer;
+  }
+  header .burger-menu .mobile-menu {
+    position: absolute;
+    top: 7%;
+    background-color: #3e7db3;
+    width: 100%;
+    z-index: 10;
+  }
+  header .burger-menu .mobile-menu ul {
+    text-align: center;
+  }
+  header .burger-menu .mobile-menu ul li {
+    list-style: none;
+    padding: 10px;
+  }
+  header .burger-menu .mobile-menu ul li a:hover {
+    color: #dee0e8;
+    text-decoration: underline;
+  }
+  header .burger-menu .toggle-menu {
+    display: none;
+  }
+  header .hero-text {
+    top: 8%;
+    bottom: 5%;
+    left: 10%;
+    right: 10%;
+  }
+  header .hero-text button {
+    font-size: 15px;
+    padding: 10px;
+  }
+}
+
+#hero-frontpage {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+}
+
+#hero-frontpage div {
+  margin: 10%;
+}
+
+#hero-frontpage div h3 {
+  font-weight: lighter;
+  text-transform: uppercase;
+}
+
+#hero-frontpage div a {
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 5px;
+  background-color: #3e7db3;
+  color: white;
+  -webkit-box-shadow: 2px 2px 5px #707070;
+          box-shadow: 2px 2px 5px #707070;
+}
+
+#hero-frontpage img {
+  width: 90%;
+  height: auto;
+}
+
+#hero img {
+  width: 100%;
+  height: auto;
+  position: relative;
+}
+
+#hero div {
+  position: absolute;
+}
+
+#success-stories {
+  background-color: #3e7db3;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 2fr 1fr;
+      grid-template-columns: 2fr 1fr;
+}
+
+#success-stories div {
+  margin: 0 20%;
+  color: white;
+  padding: 10px 0;
+}
+
+#success-stories div h3 {
+  color: white;
+}
+
+#success-stories div a {
+  color: white;
+}
+
+#success-stories img {
+  width: 100%;
+  height: 100%;
+}
+
+#storiesBanner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  background-color: #3e7db3;
+  padding: 10px;
+}
+
+#storiesBanner p {
+  color: white;
+}
+
+#storiesBanner a {
+  color: white;
+}
+
+#storiesBanner .banner-item {
+  padding: 30px;
+  width: 30%;
+}
+
+#storiesBanner .banner-item p {
+  padding: 0 15%;
+}
+
+#storiesBanner .banner-item img {
+  margin: 10px;
+  height: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+#storyField {
+  padding: 0 7%;
+}
+
+.storyPicRight {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 3rem 0;
+}
+
+.storyPicLeft {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 3rem 0;
+}
+
+.textStory {
+  width: 60%;
+  padding: 0 2rem;
+}
+
+.storyPic {
+  width: 40%;
+  text-align: center;
+}
+
+.storyPic img {
+  width: 80%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+#organisation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin: 10px 0;
+}
+
+#organisation img {
+  width: 15%;
+  height: auto;
+}
+
+#inventions img {
+  width: 100%;
+  height: auto;
+  position: relative;
+}
+
+#inventions div {
+  color: white;
+  position: absolute;
+  text-align: center;
+  top: 20%;
+  bottom: 20%;
+  left: 30%;
+  right: 30%;
+}
+
+#inventionsPage {
+  background-color: aqua;
+  padding: 0 7%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.inventionCard {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+footer {
+  background-color: #e3e3e3;
+}
+
+footer h1 {
+  font-size: 18px;
+  text-align: center;
+}
+
+footer nav ul {
+  text-align: center;
+}
+
+footer nav ul li {
+  list-style: none;
+  display: inline;
+}
+/*# sourceMappingURL=style.css.map */

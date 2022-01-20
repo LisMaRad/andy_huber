@@ -1,0 +1,12 @@
+{% block content %}
+{% for post in posts %}
+    <div class="inventionCard">
+    <img src="{{post.thumbnail}}">
+    
+    <div class="textInvention">
+    <h2>{{post.title}}</h2>
+    <p>{{post.content}}</p>
+    <a href="https://www.goodnet.org/articles/7-new-technologies-that-create-clean-water-for-thirsty-world">Quelle: https://www.goodnet.org/articles/7-new-technologies-that-create-clean-water-for-thirsty-world</a></div>
+        </div>
+{% endfor %}
+{% endblock %}

@@ -1,0 +1,29 @@
+#quote{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    align-items: center;
+    div{
+        margin: 5%;
+        p{
+            text-align: right; 
+            margin-right: 20px;     
+        }
+    }
+    img{
+        width: 70%;
+        height: auto;
+    }
+}
+
+@media screen and (max-width: $mobile){
+    #quote{
+        div{
+            h2{
+                font-size: $mobile-h2-size;
+            }
+            p{
+                font-size: $mobile-text-size;
+            }
+        }
+    }
+}

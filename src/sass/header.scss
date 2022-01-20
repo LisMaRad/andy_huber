@@ -1,0 +1,27 @@
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 10px;
+    ul{
+        text-align: right;
+        li{
+            list-style: none;
+            display: inline;
+            padding: 0 10px;
+            &.current_page_item a{
+                border-bottom: 2px solid $prim;
+            }
+            a:hover{
+                color: $darkgray;
+            }
+        }
+    }
+    .burger-menu{
+        display: none;
+    }
+}
+
+@media screen and (max-width: $mobile){
+    
+}

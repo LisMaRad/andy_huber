@@ -1,0 +1,12 @@
+{% block content %}
+{% for post in posts %}
+    <div class="background">
+        <img src="{{post.thumbnail}}">
+        <div class="overlay">
+            <h3>{{post.title}}</h3>
+            <p>{{post.content}}</p>
+            <a href="<?php the_permalink(); ?>">[Learn more]</a>
+        </div>
+    </div>
+{% endfor %}
+{% endblock %}

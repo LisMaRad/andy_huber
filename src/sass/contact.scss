@@ -1,0 +1,41 @@
+#contact{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    .contact-image{
+        text-align: center;
+        // align-items: center;
+        img{
+            width: 80%;
+            height: auto;
+        }
+    }
+    input{
+        border-radius: $radius;
+    }
+    textarea{
+        border-radius: $radius;
+    }
+    .wpcf7-submit{
+        padding: 10px 30px;
+        margin: 10px 0;
+        border-radius: $radius;
+        background-color: $prim;
+        color: white;
+        box-shadow: $shadow-right-bottom;
+        border: none;
+        &:hover{
+            cursor: pointer;
+            box-shadow: none;
+        }
+    }
+}
+
+@media screen and (max-width: $mobile){
+    #contact{
+        grid-template-columns: 1fr;
+        form{
+            margin: 0 5%;
+        }
+    }
+}

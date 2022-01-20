@@ -1,0 +1,25 @@
+{% block content %}
+{% for key,story in stories %}
+{%if key%2 == 0%}
+    <div class="storyPicRight" id="item{{story.id}}">
+       <div class="textStory">
+    <h2>{{story.title}}</h2>
+    <p>{{story.content}}</p>
+    </div>
+    <div class="storyPic">
+    <img src="{{story.thumbnail}}">
+    </div>
+    </div>
+    {% else %}
+    <div class="storyPicLeft" id="item{{story.id}}">
+     <div class="textStory">
+    <h2>{{story.title}}</h2>
+    <p>{{story.content}}</p>
+    </div>
+    <div class="storyPic">
+    <img src="{{story.thumbnail}}">
+    </div>
+    </div>
+    {%endif%}
+{% endfor %}
+{% endblock %}

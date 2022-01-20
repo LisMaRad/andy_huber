@@ -1,0 +1,81 @@
+// @import "reset";
+
+$font: 'Covered By Your Grace', cursive;
+$text-font:'Cera Basic';
+$mobile: 800px;
+
+$prim: #3e7db3;
+$second: #dee0e8;
+$darkgray: #707070;
+$lightgray: #e3e3e3;
+
+$text-size: 20px;
+$h1-size: 40px;
+$h2-size: 45px;
+$h3-size: 30px;
+$source-size: 15px;
+
+$mobile-text-size: 18px;
+$mobile-h2-size: 20px;
+
+$radius: 5px;
+$shadow-right-bottom: 2px 2px 5px $darkgray;
+
+@font-face {
+    font-family: 'Covered By Your Grace', cursive;
+    src: url("fonts/CoveredByYourGrace-Regular.ttf");
+}
+
+@font-face {
+    font-family: 'Cera Basic';
+    src: url("fonts/cera-basic.otf");
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: $text-font;
+    margin: 0;
+}
+
+h1{
+    color: $prim;
+    font-family: $font;
+    font-size: $h1-size;
+}
+
+h3{
+    color: $darkgray;
+    font-size: $h3-size;
+}
+
+h2{
+    font-size: $h2-size;
+    text-align: center;
+    color: $darkgray;
+}
+
+p{
+    font-size: $text-size;
+    line-height: 1.5;
+
+}
+
+a{
+    color: black;
+    text-decoration: none;
+    font-size: $text-size;
+}
+
+@import "header";
+@import "hamburger";
+@import "hero";
+@import "success-stories";
+@import "organisation";
+@import "inventions";
+@import "quote";
+@import "footer";
+@import "contact";
+@import "hamburger";

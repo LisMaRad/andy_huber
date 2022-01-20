@@ -1,0 +1,8 @@
+{% block content %}
+{% for post in posts %}
+    <a href="{{post.meta('link')}}" target=_blank>
+        <img src="{{post.thumbnail}}">
+    </a>
+    {# <p>{{post.meta('link')}}</p> #}
+{% endfor %}
+{% endblock %}

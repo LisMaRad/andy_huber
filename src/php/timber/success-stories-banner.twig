@@ -1,0 +1,11 @@
+{% block content %}
+{% for post in posts %}
+    <div class="banner-item">
+        <img src="{{theme.link}}/images/water_drop.png" alt="waterdrop icon">
+    <div class="banner-text">
+        <p>{{post.title}}</p>
+        <a href="#item{{post.id}}">[view more]</a>
+    </div>
+    </div>
+{% endfor %}
+{% endblock %}

@@ -1,0 +1,578 @@
+@font-face {
+  font-family: "Covered By Your Grace", cursive;
+  src: url("fonts/CoveredByYourGrace-Regular.ttf");
+}
+@font-face {
+  font-family: "Cera Basic";
+  src: url("fonts/cera-basic.otf");
+}
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Cera Basic";
+  margin: 0;
+}
+
+h1 {
+  color: #3e7db3;
+  font-family: "Covered By Your Grace", cursive;
+  font-size: 40px;
+}
+
+h3 {
+  color: #707070;
+  font-size: 30px;
+}
+
+h2 {
+  font-size: 45px;
+  text-align: center;
+  color: #707070;
+}
+
+p {
+  font-size: 20px;
+  line-height: 1.5;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 10px;
+}
+header ul {
+  text-align: right;
+}
+header ul li {
+  list-style: none;
+  display: inline;
+  padding: 0 10px;
+}
+header ul li.current_page_item a {
+  border-bottom: 2px solid #3e7db3;
+}
+header ul li a:hover {
+  color: #707070;
+}
+header .burger-menu {
+  display: none;
+}
+
+@media screen and (max-width: 800px) {
+  header .screen-menu {
+    display: none;
+  }
+  header .burger-menu {
+    display: block;
+  }
+  header .burger-menu img {
+    position: absolute;
+    width: 10%;
+    top: 5%;
+    right: 5%;
+  }
+  header .burger-menu img:hover {
+    cursor: pointer;
+  }
+  header .burger-menu .mobile-menu {
+    position: absolute;
+    top: 10%;
+    right: 0;
+    left: 0;
+    background-color: #3e7db3;
+    width: 100%;
+    z-index: 10;
+  }
+  header .burger-menu .mobile-menu ul {
+    text-align: center;
+  }
+  header .burger-menu .mobile-menu ul li {
+    display: block;
+    list-style: none;
+    padding: 10px;
+  }
+  header .burger-menu .mobile-menu ul li a:hover {
+    color: #dee0e8;
+    text-decoration: underline;
+  }
+  header .burger-menu .toggle-menu {
+    display: none;
+  }
+  header .hero-text {
+    top: 8%;
+    bottom: 5%;
+    left: 10%;
+    right: 10%;
+  }
+  header .hero-text button {
+    font-size: 15px;
+    padding: 10px;
+  }
+}
+#hero-frontpage {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+}
+#hero-frontpage div {
+  margin: 10%;
+}
+#hero-frontpage div h3 {
+  font-weight: lighter;
+  text-transform: uppercase;
+}
+#hero-frontpage div h2 {
+  text-align: left;
+}
+#hero-frontpage div a {
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 5px;
+  background-color: #3e7db3;
+  color: white;
+  box-shadow: 2px 2px 5px #707070;
+}
+#hero-frontpage div a:hover {
+  box-shadow: none;
+}
+#hero-frontpage img {
+  width: 70%;
+  height: auto;
+}
+
+#hero {
+  position: relative;
+}
+#hero img {
+  width: 100%;
+  height: auto;
+}
+#hero div {
+  position: absolute;
+  top: 20%;
+  bottom: 20%;
+  left: 20%;
+  right: 20%;
+}
+#hero div h2 {
+  color: white;
+}
+#hero div p {
+  text-align: right;
+  color: white;
+}
+
+@media screen and (max-width: 800px) {
+  #hero-frontpage {
+    grid-template-columns: 2fr 1fr;
+  }
+  #hero-frontpage div {
+    margin-top: 0;
+  }
+  #hero-frontpage img {
+    width: 100%;
+  }
+
+  #hero div {
+    left: 2%;
+    right: 2%;
+  }
+  #hero div h2 {
+    font-size: 20px;
+  }
+}
+#success-stories {
+  background-color: #3e7db3;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  align-items: center;
+}
+#success-stories div {
+  margin: 0 20%;
+  color: white;
+  padding: 20px 0;
+}
+#success-stories div h3 {
+  color: white;
+}
+#success-stories div a {
+  color: white;
+}
+#success-stories img {
+  width: 100%;
+  height: 100%;
+}
+
+@media screen and (max-width: 800px) {
+  #success-stories {
+    grid-template-columns: 1fr;
+  }
+  #success-stories div {
+    margin: 0 5%;
+  }
+}
+#storiesBanner {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  background-color: #3e7db3;
+  padding: 50px;
+}
+@media screen and (max-width: 800px) {
+  #storiesBanner {
+    flex-direction: column;
+  }
+}
+@media screen and (min-width: 800px) {
+  #storiesBanner {
+    flex-direction: row;
+  }
+}
+#storiesBanner p {
+  color: white;
+}
+#storiesBanner a {
+  color: white;
+}
+#storiesBanner .banner-item {
+  padding: 30px;
+}
+@media screen and (min-width: 800px) {
+  #storiesBanner .banner-item {
+    width: 30%;
+    height: fit-content;
+  }
+}
+@media screen and (max-width: 800px) {
+  #storiesBanner .banner-item {
+    display: flex;
+  }
+}
+#storiesBanner .banner-item p {
+  padding: 0 15%;
+}
+#storiesBanner .banner-item img {
+  margin: 10px;
+  height: 50%;
+  object-fit: cover;
+}
+
+#storyField {
+  padding: 0 7%;
+}
+#storyField .storyPicRight {
+  display: flex;
+  align-items: center;
+  padding: 3rem 0;
+}
+@media screen and (max-width: 800px) {
+  #storyField .storyPicRight {
+    flex-direction: column;
+  }
+}
+@media screen and (min-width: 800px) {
+  #storyField .storyPicRight {
+    flex-direction: row;
+  }
+}
+#storyField .storyPicLeft {
+  display: flex;
+  align-items: center;
+  padding: 3rem 0;
+}
+@media screen and (max-width: 800px) {
+  #storyField .storyPicLeft {
+    flex-direction: column;
+  }
+}
+@media screen and (min-width: 800px) {
+  #storyField .storyPicLeft {
+    flex-direction: row-reverse;
+  }
+}
+#storyField .textStory {
+  width: 60%;
+  padding: 0 2rem;
+}
+#storyField .textStory h2 {
+  text-align: left;
+}
+#storyField .storyPic {
+  width: 40%;
+  text-align: center;
+}
+#storyField .storyPic img {
+  width: 80%;
+  object-fit: cover;
+}
+
+#organisation {
+  display: flex;
+  justify-content: space-around;
+  margin: 10px 0;
+  align-items: center;
+}
+#organisation a {
+  width: 15%;
+}
+#organisation a img {
+  width: 100%;
+  height: auto;
+  padding: 50px 0;
+}
+
+#inventions .background {
+  position: relative;
+}
+#inventions .background img {
+  width: 100%;
+  height: auto;
+}
+#inventions .overlay {
+  color: white;
+  position: absolute;
+  text-align: center;
+  padding: 0 60px;
+  top: 20%;
+  bottom: 20%;
+}
+#inventions .overlay h3 {
+  color: white;
+}
+#inventions .overlay a {
+  color: white;
+}
+
+#inventionsPage {
+  padding: 0 7%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+#inventionsPage .inventionCard {
+  width: 40%;
+  height: fit-content;
+  margin: 5%;
+  display: flex;
+  flex-direction: column;
+  background-color: #DEE0E8;
+}
+#inventionsPage img {
+  width: auto;
+  height: 30%;
+  object-fit: cover;
+}
+#inventionsPage .textInvention {
+  height: 70%;
+  padding: 30px;
+}
+#inventionsPage .textInvention h2 {
+  margin-top: 0;
+  text-align: left;
+  font-size: 30px;
+}
+#inventionsPage .textInvention p {
+  color: #3E7DB3;
+}
+#inventionsPage .textInvention a {
+  font-size: 15px;
+}
+
+#myPatents {
+  color: white;
+  background-color: #3e7db3;
+  padding: 30px 10%;
+}
+#myPatents h2 {
+  color: white;
+  text-align: left;
+  font-size: 3em;
+  margin-top: 0;
+}
+#myPatents li {
+  line-height: 1.6;
+  font-size: 1.7em;
+}
+
+@media screen and (max-width: 800px) {
+  #inventions .background {
+    overflow: hidden;
+  }
+  #inventions .background img {
+    width: 160%;
+  }
+  #inventions .overlay {
+    top: 5%;
+    bottom: 5%;
+    padding: 5px;
+  }
+  #inventions .overlay a, #inventions .overlay p {
+    font-size: 18px;
+  }
+  #inventions .overlay h3 {
+    margin: 0;
+  }
+
+  .inventionCard {
+    width: 80%;
+  }
+}
+#quote {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  align-items: center;
+}
+#quote div {
+  margin: 5%;
+}
+#quote div p {
+  text-align: right;
+  margin-right: 20px;
+}
+#quote img {
+  width: 70%;
+  height: auto;
+}
+
+@media screen and (max-width: 800px) {
+  #quote div h2 {
+    font-size: 20px;
+  }
+  #quote div p {
+    font-size: 18px;
+  }
+}
+footer {
+  background-color: #e3e3e3;
+  padding: 10px;
+}
+footer h1 {
+  font-size: 30px;
+  text-align: center;
+}
+footer nav {
+  text-align: center;
+}
+footer nav ul {
+  padding: 0;
+}
+footer nav ul li {
+  list-style: none;
+  display: inline;
+}
+footer nav ul li a:hover {
+  color: #707070;
+}
+footer span {
+  display: flex;
+  justify-content: center;
+}
+footer span img {
+  width: 30px;
+  height: auto;
+  margin: 0 10px;
+  opacity: 0.8;
+}
+
+#contact {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+}
+#contact .contact-image {
+  text-align: center;
+}
+#contact .contact-image img {
+  width: 80%;
+  height: auto;
+}
+#contact input {
+  border-radius: 5px;
+}
+#contact textarea {
+  border-radius: 5px;
+}
+#contact .wpcf7-submit {
+  padding: 10px 30px;
+  margin: 10px 0;
+  border-radius: 5px;
+  background-color: #3e7db3;
+  color: white;
+  box-shadow: 2px 2px 5px #707070;
+  border: none;
+}
+#contact .wpcf7-submit:hover {
+  cursor: pointer;
+  box-shadow: none;
+}
+
+@media screen and (max-width: 800px) {
+  #contact {
+    grid-template-columns: 1fr;
+  }
+  #contact form {
+    margin: 0 5%;
+  }
+}
+@media screen and (max-width: 800px) {
+  header .screen-menu {
+    display: none;
+  }
+  header .burger-menu {
+    display: block;
+  }
+  header .burger-menu img {
+    position: absolute;
+    width: 10%;
+    top: 5%;
+    right: 5%;
+  }
+  header .burger-menu img:hover {
+    cursor: pointer;
+  }
+  header .burger-menu .mobile-menu {
+    position: absolute;
+    top: 10%;
+    right: 0;
+    left: 0;
+    background-color: #3e7db3;
+    width: 100%;
+    z-index: 10;
+  }
+  header .burger-menu .mobile-menu ul {
+    text-align: center;
+  }
+  header .burger-menu .mobile-menu ul li {
+    display: block;
+    list-style: none;
+    padding: 10px;
+  }
+  header .burger-menu .mobile-menu ul li a:hover {
+    color: #dee0e8;
+    text-decoration: underline;
+  }
+  header .burger-menu .toggle-menu {
+    display: none;
+  }
+  header .hero-text {
+    top: 8%;
+    bottom: 5%;
+    left: 10%;
+    right: 10%;
+  }
+  header .hero-text button {
+    font-size: 15px;
+    padding: 10px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

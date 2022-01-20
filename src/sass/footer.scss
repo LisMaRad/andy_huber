@@ -1,0 +1,31 @@
+footer{
+    background-color: $lightgray;
+    padding: 10px;
+    h1{
+        font-size: $h3-size;
+        text-align: center;
+    }
+    nav{
+        text-align: center;
+        ul{
+            padding: 0;
+            li{
+                list-style: none;
+                display: inline;
+                a:hover{
+                    color: $darkgray;
+                }
+            }
+        }
+    }
+    span{
+        display: flex;
+        justify-content: center;
+        img{
+            width: 30px;
+            height: auto;
+            margin: 0 10px;
+            opacity: 0.8;
+        }
+    }
+}
