@@ -10,12 +10,12 @@
 <script type="module">
 document.documentElement.classList.remove('no-js'); document.documentElement.classList.add('js')
 </script>
-<script src="js/script.js"></script>
-<script src="js/toggle.js"></script>
 
 <link rel="stylesheet" href="sass/style.css" />
-<link href="dist/hamburgers.css" rel="stylesheet">
-
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
 
 <meta name="description"
 content="Sie wollen eine neue Website, dann sind Sie hier genau richtig. Alex Mayr designed Ihre Homepage" />
@@ -28,14 +28,6 @@ content="Sie wollen eine neue Website, dann sind Sie hier genau richtig. Alex Ma
 <meta property="og:type" content="website" />
 <meta name="twitter:card" content="summary" />
 <meta property="og:url" content="https://www.alexmayer.com" />
-<link rel="canonical" href="https://www.alexmayer.com" />
-
-<link rel="icon" href="assets/favicon.ico" />
-<link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
-<link rel="apple-touch-icon" href="assets/apple-touch-icon.png" />
-<link rel="manifest" href="assets/my.webmanifest" />
-<link href="../node_modules/hamburgers/dist/hamburgers.css" rel="stylesheet">
-<meta name="theme-color" content="#009ee3" />
 <?php wp_head(); ?>
 </head>
 
