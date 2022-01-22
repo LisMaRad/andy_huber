@@ -40,13 +40,13 @@ function showtext(id){
 </script>
 
 <header>
-        <a href="index.php"><h1>Andy Huber</h1></a>
-        <nav class="screen-menu"><?php wp_nav_menu(array ('theme_location' => 'main-menu')); ?></nav>
-        
-        <div class="burger-menu">
-            <span onclick="showtext('menu')" ><img src="<?php echo get_template_directory_uri(); ?>/images/menu.png" alt="water glas"></span>
-            <div id="menu" class="toggle-menu">
-                <nav class="mobile-menu"><?php wp_nav_menu(array ('theme_location' => 'main-menu')); ?></nav>
-            </div>
-        </div>
-    </header>
+<a href="index.php"><h1>Andy Huber</h1></a>
+<nav class="screen-menu"><?php wp_nav_menu(array ('theme_location' => 'main-menu')); ?></nav>
+
+<div class="burger-menu">
+<span onclick="showtext('menu')" ><img src="<?php echo get_template_directory_uri(); ?>/images/menu.png" alt="water glas"></span>
+<div id="menu" class="toggle-menu">
+<nav class="mobile-menu"><?php wp_nav_menu(array ('theme_location' => 'main-menu')); ?></nav>
+</div>
+</div>
+</header>
