@@ -312,9 +312,9 @@ header {
     #inventions .background img {
       width: 160%; }
   #inventions .overlay {
-    top: 5%;
-    bottom: 5%;
-    padding: 5px; }
+    top: 10%;
+    bottom: 10%;
+    padding: 0 15px; }
     #inventions .overlay a, #inventions .overlay p {
       font-size: 18px; }
     #inventions .overlay h3 {

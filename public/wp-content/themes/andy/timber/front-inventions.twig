@@ -5,7 +5,7 @@
         <div class="overlay">
             <h3>{{post.title}}</h3>
             <p>{{post.content}}</p>
-            <a href="<?php the_permalink(); ?>">[Learn more]</a>
+            <a href="{{post.link}}">[Learn more]</a>
         </div>
     </div>
 {% endfor %}
