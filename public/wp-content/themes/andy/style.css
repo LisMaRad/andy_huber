@@ -497,6 +497,7 @@ footer span img {
 }
 #contact input {
   border-radius: 5px;
+  padding: 5px 0;
 }
 #contact textarea {
   border-radius: 5px;

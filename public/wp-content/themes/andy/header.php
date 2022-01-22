@@ -11,11 +11,11 @@
 document.documentElement.classList.remove('no-js'); document.documentElement.classList.add('js')
 </script>
 
-<link rel="stylesheet" href="sass/style.css" />
-<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-<link rel="manifest" href="/site.webmanifest">
+<!-- <link rel="stylesheet" href="sass/style.css" /> -->
+<link rel="apple-touch-icon" sizes="180x180" href="./wp-content/themes/andy/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="./wp-content/themes/andy/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="./wp-content/themes/andy/favicon-16x16.png">
+<link rel="manifest" href="./wp-content/themes/andy/site.webmanifest">
 
 <meta name="description"
 content="Sie wollen eine neue Website, dann sind Sie hier genau richtig. Alex Mayr designed Ihre Homepage" />
